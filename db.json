@@ -1,0 +1,11 @@
+{
+  "userList": [
+    {
+      "name": "Hien",
+      "email": "hien@gmail.com",
+      "phoneNumber": "123456",
+      "block": false,
+      "id": 1
+    }
+  ]
+}
