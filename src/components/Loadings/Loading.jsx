@@ -1,5 +1,5 @@
 import React from "react";
-import Img from "./logo192.png";
+import Img from "./logo.svg";
 import "./Loading.scss";
 
 export default function Loading() {

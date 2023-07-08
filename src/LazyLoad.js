@@ -1,12 +1,21 @@
-import React, { lazy, Suspense } from "react";
-import Loading from "@components/Loadings/Loading";
+import React, { lazy, Suspense } from 'react';
+import Loading from '@components/Loadings/Loading'
 
 const LazyLoad = (importFunc) => {
+  // const LazyComponent = lazy(() => {
+  //   return new Promise((resolve) => {
+  //     setTimeout(() => {
+  //       resolve(importFunc());
+  //     }, 500);
+  //   });
+  // });
   const LazyComponent = lazy(importFunc);
-  return (props) => {
+  
+  return (props) => (
     <Suspense fallback={<Loading></Loading>}>
       <LazyComponent {...props} />
-    </Suspense>;
-  };
+    </Suspense>
+  );
 };
+
 export default LazyLoad;

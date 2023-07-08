@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+## Base Structure React App
+## Library
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+SCSS: `https://www.npmjs.com/package/node-sass` (css style) (npm i sass)
 
-## Available Scripts
+Json-server: `https://www.npmjs.com/package/json-server/v/0.17.3` (fake api server) (npm i json-server)
 
-In the project directory, you can run:
+Axios: `https://www.npmjs.com/package/axios/v/1.4.0` (support call api) (npm i axios)
 
-### `npm start`
+Concurrently: `https://www.npmjs.com/package/concurrently/v/8.2.0` (run multiple scripts at once  "npm start = npm start-server + npm start-add") (npm i Concurrently)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Craco: `https://www.npmjs.com/package/@craco/craco/v/7.1.0` (load craco.config.js while npm start) (config alias) (npm i craco)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+React-router-dom: `https://www.npmjs.com/package/react-router-dom/v/5.3.4` (BrowserRouter, Routes, Route => Config Routing React App) (npm i react-router-dom)
 
-### `npm test`
+React-redux: `https://react-redux.js.org/introduction/getting-started` (useDispatch, useSelector, Provider) (npm i react-redux)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Reduxjs/toolkit: `https://redux-toolkit.js.org/` (createSlice, createAsyncThunk, configureStore) (npm i @reduxjs/toolkit)
 
-### `npm run build`
+## Require Enviroment
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Node JS version =>  16+
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Npm version =>  integrated in node 16+
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Setup App
 
-### `npm run eject`
+Run command below for install package library 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Run App
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Required: PORT 3000 REQUIRED EMPTY PORT
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm start
+```
+or
 
-## Learn More
+```bash
+npm run start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+When the run is complete, go to your browser and visit:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+=> http://localhost:4000/users => json server fake api
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=> http://localhost:3000  => react js app
